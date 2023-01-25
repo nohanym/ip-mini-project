@@ -1,0 +1,94 @@
+.cartview-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(118, 160, 196, 0.281);
+}
+.cartview-wrapper {
+  padding: 1rem 0 2rem 0;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  height: 100%;
+  max-width: 600px;
+  width: 100%;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+.cartview-checkout-btn {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 0;
+  height: 40px;
+  background-color: #2a3033;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.cartview-checkout-btn:hover {
+  background-color: #464849;
+}
+
+.cartview-wrapper hr {
+  width: 80%;
+  margin: 1rem auto;
+}
+.cartview-subtotal {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Cart Item */
+.cart-item-container {
+  position: relative;
+  width: 95%;
+  margin: 1rem auto 1rem auto;
+  height: 170px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+}
+
+.cart-item-image {
+  height: 100%;
+}
+.cart-item-image img {
+  height: 100%;
+}
+
+.cart-item-texts {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart-item-texts h2 {
+  font-size: 1.2rem;
+}
+
+.cartview-exit-icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1rem 0 0;
+  cursor: pointer;
+}
+.cartview-exit-icon img {
+  width: 20px;
+}
+
+.cart-exit-icon {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  right: 20px;
+  top: 20px;
+}
+.cart-exit-icon img {
+  width: 100%;
+}

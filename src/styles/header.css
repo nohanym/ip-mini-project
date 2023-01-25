@@ -1,0 +1,154 @@
+header {
+  background-color: #75c053;
+}
+
+.content {
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  color: white;
+  font-family: "Lobster", cursive;
+  transition: all 0.3s ease-in;
+}
+#logo:hover {
+  color: rgb(41, 39, 39);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 80px;
+}
+
+li {
+  height: 100%;
+  width: fit-content;
+  margin: 0rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+}
+a:hover {
+  color: #050505;
+}
+
+.filled-link {
+  display: block;
+  background-color: white;
+  border-radius: 100px;
+  height: 40px;
+  width: 120px;
+  color: black;
+  margin: 0;
+
+  transition: all 0.2s ease-in;
+}
+
+.filled-link a {
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filled-link:hover {
+  outline: 2px solid white;
+  background-color: #75c053;
+  color: white;
+}
+
+.sign-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.filled-link-alt {
+  display: block;
+  background-color: black;
+  border-radius: 100px;
+  height: 40px;
+  width: 120px;
+  color: white;
+  margin: 0;
+  margin-right: 0.5rem;
+
+  transition: all 0.2s ease-in;
+}
+
+.filled-link-alt a {
+  transition: all 0.2s ease-in;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filled-link-alt:hover {
+  outline: 2px solid white;
+  background-color: #75c053;
+  color: white;
+}
+
+.header-cart-icon {
+  width: 30px;
+  position: relative;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: scale 0.5s ease-in;
+}
+.header-cart-icon:hover {
+  scale: 1.03;
+}
+.header-cart-icon img {
+  width: 100%;
+  height: 100%;
+}
+.header-cart-icon p {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  right: 0px;
+  display: grid;
+  place-content: center;
+
+  background-color: #ff3d3d;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 0;
+
+    height: 200px;
+  }
+
+  ul {
+    justify-content: flex-end;
+  }
+}
+

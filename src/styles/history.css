@@ -1,0 +1,24 @@
+.history-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+}
+
+.history-title {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #050505;
+}
+
+/* history Item */
+.history-item-container {
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: #f1f1f1;
+  margin: 1rem 0;
+}
+
+.history-item-text {
+  font-size: 1.1rem;
+  color: #050505;
+}

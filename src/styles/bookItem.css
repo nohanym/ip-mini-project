@@ -1,0 +1,135 @@
+.books-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 450px));
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
+  cursor: pointer;
+}
+
+.books-title {
+  font-size: 2.5rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.book-item-container {
+  display: flex;
+  height: 250px;
+  border-radius: 15px;
+  border: 1px solid #c7c7c7;
+  overflow-y: hidden;
+  transition: all 0.3s ease;
+}
+.book-item-container:hover {
+  background-color: #fafafa;
+  /* outline: 1px solid #fcf8f8; */
+}
+
+.book-item-image {
+  height: 100%;
+  width: 40%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.book-item-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.book-item-texts {
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.book-item-texts h2 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #050505;
+}
+.book-item-texts .category {
+  font-size: 0.9rem;
+  color: #7c7a7a;
+}
+.book-item-texts .price {
+  font-size: 1.1rem;
+  color: #75c053;
+  font-weight: 700;
+}
+.book-item-texts .author {
+  font-size: 1rem;
+  color: #5d5f61;
+}
+
+.book-item-add-cart {
+  background-color: #2a3033;
+  color: white;
+  border: 0;
+  height: 40px;
+  border-radius: 25px;
+  max-width: 90%;
+  min-width: fit-content;
+  width: 100%;
+  cursor: pointer;
+}
+.book-item-add-cart:hover,
+.book-item-add-cart:focus {
+  background-color: #464849;
+}
+
+/* Search Bar */
+.search-bar {
+  max-width: 600px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.text-input-alt {
+  flex: 2;
+  height: 50px;
+  outline: 0;
+  border: 0;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 1rem;
+  padding: 0.1rem 0.8rem;
+}
+.text-input-alt:focus {
+  border: 2px solid #75c053;
+}
+
+.button-success-search {
+  flex: 1;
+  width: 20%;
+  height: 50px;
+  margin: 0 auto;
+  margin-left: 1rem;
+  border: none;
+  background-color: #75c053;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.button-success-search:hover,
+.button-success-search:focus {
+  background-color: #78d84c;
+  color: white;
+}
+
+
+@media (max-width: 670px) {
+  .search-bar   {
+    width: 100%;
+  }
+
+  .text-input-alt {
+    width: 100%;
+  }
+}
